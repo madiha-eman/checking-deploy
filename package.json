@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "server": "nodemon index.js --ignore client",
     "client": "cd client && npm run start",
     "server-install": "npm install",
