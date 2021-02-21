@@ -1,0 +1,138 @@
+.products{
+    /* flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+     margin: 20px 0; 
+}
+
+
+/* ----------- Product Item ----------------- */
+@import url("../utils/productItem/productItem.css");
+@import url("../../../css/Home.css");
+.delete-all{
+    text-align: right;
+    margin: 20px;
+}
+.delete-all input{
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+}
+.delete-all span{
+    text-transform: uppercase;
+    color: rgb(3, 165, 206);
+    letter-spacing: 1.3px;
+}
+.delete-all button{
+    border: 1px solid crimson;
+    padding: 10px 25px;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+/* ------------ Filters Menu ----------------- */
+.filter_menu{
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.filter_menu a{
+    text-decoration: none;
+    color: #4c4c4c;
+    padding: 8px 0 8px 10px;
+    font-size: 14px;
+}
+.category{
+    width: 100%;
+    letter-spacing: .1px;
+    display: flex;
+    color: #4c4c4c;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    list-style: none;
+    height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px;
+}
+.category :hover{
+    background-image: linear-gradient(to right, white, grey)!important;
+    cursor: pointer!important;
+}
+/* .row{
+    width: 100%;
+    letter-spacing: .1px;
+    display: flex;
+    color: #4c4c4c;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    /* list-style: none; */
+    /* height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px;
+}  */
+/* .row:hover{
+    background-image: linear-gradient(to right, white, grey);
+    cursor: pointer;
+}  */
+/* .category :hover{
+    background-image: linear-gradient(to right, white, grey);
+    cursor: pointer;
+}  */
+.cat{
+    width: 100%;
+    letter-spacing: .1px;
+    display: flex;
+    color: #4c4c4c;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    list-style: none;
+    height: 16px;
+    font-weight: 00;
+    text-decoration: none;
+    font-size: 12px;
+}
+ .cat :hover{
+    width: 500px;
+    background-image: linear-gradient(to right, white, grey);
+    border-left: 4px solid #ffc40c;
+    cursor: pointer;
+} 
+.filter_menu select, input a{
+    border: 1px solid #ccc;
+    outline: none;
+    height: 40px;
+    padding: 0 5px;
+    text-decoration: none;
+    color: black!important;
+}
+.filter_menu input{
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* -------------------- Load More --------------- */
+.load_more{
+    text-align: center;
+}
+.load_more button{
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    text-transform: capitalize;
+}
