@@ -4,8 +4,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
-const path = require('path')
-
+const path = require("path");
 
 const app = express()
 app.use(express.json())
@@ -59,6 +58,18 @@ if(process.env.NODE_ENV=="production"){
 
     })
 }
+
+if (
+    process.env.NODE_ENV === "production" ||
+    process.env.NODE_ENV === "staging"
+  ) {
+    app.use(express.static("client/build"));
+  
+    app.all("*", (req, res) => {
+      res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+    });
+  }
+  app.listen(port, console.log(`listing at port ${port}`));
 
 // var server= http.createServer(app).listen(PORT, function()
 // {
